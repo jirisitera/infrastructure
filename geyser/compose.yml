@@ -1,0 +1,46 @@
+name: geyser
+services:
+  velocity:
+    container_name: velocity
+    image: itzg/mc-proxy
+    environment:
+      TYPE: VELOCITY
+      MINECRAFT_VERSION: ${VERSION}
+      MEMORY: ${VELOCITY_MEMORY}
+      TZ: ${TZ}
+      MODRINTH_PROJECTS: |
+        geyser:beta
+    restart: on-failure:3
+    stdin_open: true
+    tty: true
+    networks:
+      - geyser
+    ports:
+      - 25565:25565
+      - 19132:19132/udp
+    volumes:
+      - ./data/velocity:/server
+  paper:
+    container_name: paper
+    image: itzg/minecraft-server
+    environment:
+      TYPE: PAPER
+      VERSION: ${VERSION}
+      MEMORY: ${PAPER_MEMORY}
+      TZ: ${TZ}
+      EULA: true
+      ONLINE_MODE: false
+      LOG_TIMESTAMP: true
+      MODRINTH_PROJECTS: |
+        packetevents
+        fastasyncworldedit
+    restart: on-failure:3
+    stdin_open: true
+    tty: true
+    networks:
+      - geyser
+    volumes:
+      - ./data/paper:/data
+networks:
+  geyser:
+    name: geyser

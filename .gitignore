@@ -1,2 +1,14 @@
 *.env
-data/
+*.secret
+*.jar
+*.dat
+*.mca
+*.mcmeta
+*.lock
+*_old
+.*
+cache/
+logs/
+libraries/
+tmp/
+world*/
