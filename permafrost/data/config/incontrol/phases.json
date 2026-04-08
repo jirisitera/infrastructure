@@ -1,0 +1,10 @@
+[
+    {
+      "name": "daytime",
+      "conditions": {
+        "mintime": 1000,
+        "maxtime": 13000
+      }
+    }
+  ]
+  

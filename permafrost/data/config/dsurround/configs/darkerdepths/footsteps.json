@@ -1,0 +1,9 @@
+{
+  "footsteps": {
+    "darkerdepths:ash": "snow",
+
+    
+    "darkerdepths:amber": "stone,snow",
+    "darkerdepths:amber_block": "stone,snow"
+  }
+}

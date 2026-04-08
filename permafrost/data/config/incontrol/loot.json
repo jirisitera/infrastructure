@@ -1,0 +1,50 @@
+[
+    {
+        "mob": "dannys_expansion:ice_elemental",
+        "random": 0.05,
+        "item": "minecraft:ender_eye"
+    },
+    {
+        "mob": "dannys_expansion:ice_elemental",
+        "random": 0.05,
+        "item": "minecraft:ender_eye"
+    },
+    {
+        "mob": "iceandfire:dread_knight",
+        "remove": "iceandfire:dread_knight_sword"
+    },
+    {
+        "mob": "minecraft:creeper",
+        "item": "cavesandcliffs:moss_block",
+        "itemcount": "1-2/1-4/2-5"
+    },
+    {
+        "mob": "darkerdepths:magma_minion",
+        "item": "darkerdepths:amber",
+        "itemcount": "1-2/1-3/2-4"
+    },
+    {
+        "mob": "infernalexp:embody",
+        "item": "quark:soul_bead",
+        "itemcount": "1-2/1-3/2-4"
+    },
+    {
+        "mob": "minecraft:iron_golem",
+        "remove": "minecraft:iron_ingot",
+        "item": "minecraft:carved_pumpkin"
+    },
+    {
+        "mob": "minecraft:wither",
+        "item": "iceandfire:witherbone",
+        "itemcount": "12-24/24-48/32-64"
+    },
+    {
+        "mob": "dannys_expansion:klifour",
+        "remove": "dannys_expansion:klifour_talisman"
+    },
+    {
+        "mob": "dannys_expansion:klifour",
+        "item": "minecraft:slime_ball",
+        "itemcount": "0-1/0-1/0-2"
+    }
+]

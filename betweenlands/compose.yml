@@ -1,0 +1,25 @@
+name: betweenlands
+services:
+  betweenlands:
+    container_name: betweenlands
+    image: itzg/minecraft-server:java8
+    environment:
+      TYPE: FORGE
+      VERSION: 1.12.2
+      FORGE_VERSION: latest
+      MEMORY: 12G
+      TZ: Europe/Prague
+      EULA: true
+      LOG_TIMESTAMP: true
+    restart: on-failure:3
+    stdin_open: true
+    tty: true
+    networks:
+      - betweenlands
+    volumes:
+      - ./data:/data
+    ports:
+      - 25565:25565
+networks:
+  betweenlands:
+    name: betweenlands

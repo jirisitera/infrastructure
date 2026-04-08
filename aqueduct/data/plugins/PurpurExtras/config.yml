@@ -1,0 +1,107 @@
+settings:
+  rideables:
+    mob-needs-to-be-nametagged-to-ride: false
+  twerk-to-reduce-burn-time:
+    chance: 0.0
+    amount: 0.5
+  block-building-above-nether:
+    height-limit: 128
+    no-permission-message: '<red>Max build height in this world is: <gold><height>'
+    enabled: false
+  chat:
+    send-sleep-percentage-message:
+      player-sleeping: <grey><playername> has fallen asleep. <sleeping> out of <needed>
+        required players in <worldname> are sleeping.
+      skipping-night: <grey>Enough players have slept! Skipping through the night
+        in <worldname>.
+      enabled: false
+    escape-commands: false
+  mobs:
+    snow_golem:
+      drop-pumpkin-when-sheared: true
+    sheep:
+      jeb-shear-random-color: false
+  dye-boss-bars: false
+  lightning-transforms-entities:
+    entities:
+      villager: witch
+      pig: zombified_piglin
+    preserve-entity-state: false
+    enabled: false
+  gameplay-settings:
+    open-iron-doors-with-hand: false
+    open-iron-trapdoors-with-hand: false
+    respawn-anchor-needs-charges: true
+    spawner-placement-requires-specific-permission: false
+    run-faster-on-paths:
+      attribute-modifier-type: add_scalar
+      value: 0.0
+      path-blocks:
+      - DIRT_PATH
+      enabled: false
+    cancel-damage-from-pet-owner: false
+    fall-damage-when-jump-boost-applied: true
+  shield:
+    damage-reduction: 1.0
+    cooldown: 100
+  unlock-all-recipes-on-join: false
+  use-notarget-permissions: false
+  totem:
+    work-on-void-death: false
+  blocks:
+    shift-right-click-for-invisible-item-frames: false
+    chorus-flowers-always-drop: false
+  protect-spawners:
+    message: <red>Prevented you from breaking this block. Sneak to break it anyway.
+    allow-breaking-in-sneak: true
+    immune-to-explosions: false
+    message-type: CHAT
+    enabled: false
+  anvil-splits-minecarts: false
+  anvil-splits-boats: false
+  loom:
+    max-layers: 6
+  dispenser:
+    break-blocks:
+      pickaxe: false
+      shovel: false
+      hoe: false
+      axe: false
+      shears: false
+    shears-shear-pumpkin: false
+    puts-discs-in-jukebox: false
+    interact-with-cauldron: false
+  suspicious-blocks:
+    exclusion-list:
+      enable-item-exclusion-list: false
+      item-exclusion-list:
+      - shulker_box
+      item-excluded-message: <red>The item you're using is on the excluded list!
+      message-type: CHAT
+    enabled: false
+  furnace:
+    burn-time:
+      multiplier: 1.0
+      enabled: false
+  anvil-crushes-blocks:
+    blocks:
+      cobblestone: sand
+    enabled: false
+  stonecutter-damage-filter:
+    blacklist:
+    - player
+    enabled: false
+  creeper-squid:
+    enabled: false
+  protect-blocks-with-loot:
+    message: <red>Prevented you from breaking this block because it can regenerate
+      loot. Sneak to break it anyway.
+    allow-breaking-in-sneak: true
+    immune-to-explosions: false
+    message-type: CHAT
+    enabled: false
+  raid-totem-drops:
+    chance: 0.0
+    enabled: false
+  grindstone:
+    gives-enchants-back: false

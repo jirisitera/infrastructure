@@ -1,0 +1,41 @@
+{
+	"pestle_and_mortar": [
+	  {
+	    "input": {
+	      "id": "thebetweenlands:items_misc",
+	      "meta": 39
+	    },
+	    "output": {
+	      "id": "coloredredstone:colored_redstone_dust",
+	      "meta": 12,
+	      "size": 8
+	    }
+	  },
+	  {
+	    "input": {
+	      "id": "thebetweenlands:swamp_reed_item"
+	    },
+	    "output": {
+	      "id": "minecraft:string",
+	      "size": 2
+	    }
+	  }
+	],
+	"animator_repairable": [
+	  {
+	    "input": {
+	      "item": {
+	        "id": "thebetweenlands:bark_amulet"
+	      },
+	      //Minumum amount of fuel required to repair the item
+	      "min_fuel": 16,
+	      //Mimumum amount of life crystal required to repair the item
+	      "min_life": 16,
+	      //Amount of fuel required to repair the item if it is fully broken
+	      "max_fuel": 32,
+	      //Amount of life crystal required to repair the item if it is fully broken
+	      "max_life": 32
+	    }
+	  }
+	]
+}

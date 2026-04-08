@@ -1,0 +1,38 @@
+{
+  "config_version": {
+    "id": "foo_bar_baz",
+    "version": 1
+  },
+  "dimensions": [
+    {
+      "dim": 0,
+      "temporary_dimension": true,
+      "post_deletion_command": "tellraw @a [Mirror Dimension Dleeted]",
+      "dimensiontype": {
+        "id": 0,
+        "name": "Mirror Dimension",
+        "keeploaded": false,
+        "suffix": "_dim0",
+        "worldprovider": "thebetweenlands.common.world.WorldProviderBetweenlands",
+        "require_exact_match": true
+      },
+      "worldinfo_onetime": {
+          "RandomSeed": "",
+          "Difficulty": 3
+      },
+      "jed": {
+          "CanSpawnHostiles": true,
+          "CanSpawnPeacefulMobs": true
+      }
+    },
+    {
+      "dim": 20,
+      "dimensiontype": {
+        "id": 20,
+        "name": "The Betweenlands",
+        "keeploaded": true,
+        "suffix": "_dim20"
+      }
+    }
+  ]
+}

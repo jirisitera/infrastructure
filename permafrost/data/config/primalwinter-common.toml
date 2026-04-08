@@ -1,0 +1,15 @@
+# Should the vanilla /weather be disabled? Any changes require a world restart to take effect.
+disableWeatherCommand = true
+# A list of biome IDs that will not be forcibly converted to frozen wastelands. Any changes requires a MC restart to take effect.
+nonWinterBiomes = ["minecraft:nether_wastes", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:basalt_deltas", "minecraft:soul_sand_valley", "minecraft:the_void", "betterendforge:megalake", "betterendforge:crystal_mountains", "betterendforge:foggy_mushroomland", "betterendforge:chorus_forest", "betterendforge:shadow_forest", "betterendforge:blossoming_spires", "betterendforge:sulphur_springs", "betterendforge:amber_land", "betterendforge:umbrella_jungle", "betterendforge:glowing_grasslands", "betterendforge:lantern_woods", "betterendforge:megalake_grove", "betterendforge:painted_mountains", "betterendforge:dragon_graveyards", "infernalexp:glowstone_canyon"]
+# A list of dimension IDs that will not have winter weather effects set.
+nonWinterDimensions = ["minecraft:the_nether", "minecraft:the_end"]
+# If true, the 'nonWinterBiomes' config option will be interpreted as a list of winter biomes, and all others will be ignored.
+invertNonWinterBiomes = false
+# If true, the 'nonWinterDimensions' config option will be interpreted as a list of winter dimensions, and all others will be ignored.
+invertNonWinterDimensions = false
+# If true, snow will be layered higher than one layer during world generation.
+enableSnowAccumulationDuringWorldgen = true
+# If true, snow will be layered higher than one layer during weather (snow).
+enableSnowAccumulationDuringWeather = false
+

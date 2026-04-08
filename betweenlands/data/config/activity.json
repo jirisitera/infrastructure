@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "japicraft",
+      "uniqueId": "e2d02857-f246-4450-bbf8-69477b270933"
+    },
+    "time": 1775330596791,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Ngs9dUhUmx"
+    }
+  }
+]

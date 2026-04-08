@@ -1,0 +1,9 @@
+[
+    {
+      "conditions": "biome.id == 'minecraft:the_end'",
+      "fog": true,
+      "fogColor": "250,250,250",
+      "visibility": 0.8,
+      "fogDensity": 0.8
+    }
+]

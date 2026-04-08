@@ -1,0 +1,37 @@
+name: aqueduct
+services:
+  waterway:
+    container_name: waterway
+    image: itzg/minecraft-server
+    environment:
+      TYPE: PURPUR
+      VERSION: 1.21.11
+      MEMORY: 10G
+      TZ: Europe/Prague
+      EULA: true
+      ONLINE_MODE: false
+      LOG_TIMESTAMP: true
+      USE_FLARE_FLAGS: true
+      MODRINTH_PROJECTS: |
+        purpurextras
+        commandwhitelist
+        bluemap
+        huskhomes
+        minimotd
+        skinsrestorer
+        invsee++
+        clickmobs
+        luckperms
+      # additional external projects: gsit, fawe, coreprotect
+    restart: on-failure:3
+    stdin_open: true
+    tty: true
+    networks:
+      - aqueduct
+    volumes:
+      - ./data:/data
+    ports:
+      - 80:25565
+networks:
+  aqueduct:
+    name: aqueduct

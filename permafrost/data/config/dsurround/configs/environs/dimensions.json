@@ -1,0 +1,20 @@
+[
+  {
+    "dimId": "minecraft:overworld",
+    "fog": true,
+    "haze": true,
+    "aurora": true
+  },
+  {
+    "dimId": "minecraft:the_nether",
+    "seaLevel": 0
+  },
+  {
+    "dimId": "minecraft:the_end",
+    "seaLevel": 0,
+    "weather": true,
+    "fog": true,
+    "aurora": true,
+    "cloudHeight": 128
+  }
+]
