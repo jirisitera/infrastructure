@@ -1,0 +1,19 @@
+name: geyser-standalone
+services:
+  geyser-standalone:
+    container_name: geyser-standalone
+    image: eclipse-temurin:25-jre
+    restart: on-failure:3
+    stdin_open: true
+    tty: true
+    networks:
+      - geyser-standalone
+    ports:
+      - 19132:19132/udp
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: java -Xms1024M -jar geyser.jar
+networks:
+  geyser-standalone:
+    name: geyser-standalone

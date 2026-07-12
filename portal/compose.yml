@@ -1,0 +1,25 @@
+name: portal
+services:
+  portal:
+    container_name: portal
+    image: itzg/minecraft-server:java8
+    environment:
+      TYPE: FORGE
+      VERSION: 1.16.5
+      FORGE_VERSION: latest
+      MEMORY: 12G
+      TZ: Europe/Prague
+      EULA: true
+      LOG_TIMESTAMP: true
+    restart: on-failure:3
+    stdin_open: true
+    tty: true
+    networks:
+      - portal
+    volumes:
+      - ./data:/data
+    ports:
+      - 25565:25565
+networks:
+  portal:
+    name: portal

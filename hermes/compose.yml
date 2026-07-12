@@ -1,0 +1,39 @@
+name: hermes
+services:
+  hermes:
+    container_name: hermes
+    image: itzg/minecraft-server
+    environment:
+      TYPE: NEOFORGE
+      VERSION: 1.21.1
+      MEMORY: 12G
+      MODRINTH_PROJECTS: |
+        LNytGWDc
+        T9PomCSv
+        oWaK0Q19
+        sMvUb4Rb
+        uXXizFIs
+      MAX_PLAYERS: 42
+      SPAWN_PROTECTION: 0
+      MOTD: "                 \u00A76\u00A7lfyzikalnitabor.cz\u00A7r\n          \u00A77NeoForge 1.21.1 | Iterace 1.1.0"
+      MODE: creative
+      ICON: /icon.png
+      OVERRIDE_ICON: true
+      FORCE_GAMEMODE: true
+      ONLINE_MODE: false
+      EULA: true
+      LOG_TIMESTAMP: true
+      TZ: Europe/Prague
+    restart: on-failure:3
+    stdin_open: true
+    tty: true
+    networks:
+      - aether
+    volumes:
+      - ./data:/data
+      - ./icon.png:/icon.png
+    ports:
+      - 80:25565
+networks:
+  aether:
+    name: aether
