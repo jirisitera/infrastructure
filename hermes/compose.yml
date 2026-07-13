@@ -15,7 +15,7 @@ services:
         uXXizFIs
       MAX_PLAYERS: 42
       SPAWN_PROTECTION: 0
-      MOTD: "                 \u00A76\u00A7lfyzikalnitabor.cz\u00A7r\n          \u00A77NeoForge 1.21.1 | Iterace 1.1.0"
+      MOTD: "                 \u00A76\u00A7lfyzikalnitabor.cz\u00A7r\n          \u00A77NeoForge 1.21.1 | Iterace 1.1.3"
       MODE: creative
       ICON: /icon.png
       OVERRIDE_ICON: true
