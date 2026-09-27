@@ -22,6 +22,11 @@
 *.wav
 *.lnk
 *.log
+*.sha1
+*.pom
+*.repositories
+*.bbmodel
+*.zip
 *.data
 *.properties
 *.txt

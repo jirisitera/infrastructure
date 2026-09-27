@@ -1,0 +1,32 @@
+name: hydra
+services:
+  hydra:
+    container_name: hydra
+    image: itzg/minecraft-server
+    environment:
+      TYPE: PAPER
+      VERSION: 26.2
+      MEMORY: 12G
+      MODRINTH_PROJECTS: |
+        4h8rX3rt
+        HYKaKraK
+      PLUGINS: |
+        https://github.com/jirisitera/deceiv/releases/latest/download/deceiv.jar
+      MAX_PLAYERS: 16
+      MOTD: "Deceiv Test Server"
+      MODE: adventure
+      EULA: true
+      LOG_TIMESTAMP: true
+      TZ: Europe/Prague
+    restart: on-failure:3
+    stdin_open: true
+    tty: true
+    networks:
+      - lerna
+    volumes:
+      - ./data:/data
+    ports:
+      - 25565:25565
+networks:
+  lerna:
+    name: lerna

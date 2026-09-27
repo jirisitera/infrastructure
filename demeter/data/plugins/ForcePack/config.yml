@@ -1,0 +1,58 @@
+velocity-mode: false
+
+prevent-movement: true
+prevent-damage: true
+
+enable-mc-164316-fix: true
+load-last: false
+await-items-adder-host: false
+use-new-force-pack-screen: true
+try-to-stop-fake-accept-hacks: false
+
+send-loading-title: false
+delay-pack-sending-by: 0
+
+web-server:
+  enabled: false
+  protocol: "http://"
+  server-ip: 0.0.0.0
+  port: 8080
+  port-on-url: true
+
+Server:
+  packs:
+    all:
+      urls: ["https://cdn.modrinth.com/data/QI0EmgZ1/versions/E9rngRfK/Matcha_Flavoured_1_12.zip"]
+      generate-hash: true
+      hashes: [""]
+
+  Actions:
+    ACCEPTED:
+      kick: false
+      Commands: []
+    DOWNLOADED:
+      kick: false
+      Commands: []
+    SUCCESSFULLY_LOADED:
+      kick: false
+      Commands: []
+    DECLINED:
+      kick: true
+      Commands: []
+    FAILED_DOWNLOAD:
+      kick: true
+      Commands: []
+    FAILED_RELOAD:
+      kick: true
+      Commands: []
+    DISCARDED:
+      kick: true
+      Commands: []
+  Update GUI Speed: 20
+  Update GUI: false
+  verify: true
+  resend: true
+  force-invalid-size: false
+  geyser: false
+  bypass-permission: true
+  debug: false

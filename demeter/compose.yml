@@ -1,0 +1,41 @@
+name: demeter
+services:
+  demeter:
+    container_name: demeter
+    image: itzg/minecraft-server
+    environment:
+      TYPE: PURPUR
+      VERSION: 26.2
+      MEMORY: 12G
+      # matcha flavoured
+      # forcepack
+      # voice chat
+      # graves
+      # jei recipe fix
+      MODRINTH_PROJECTS: |
+        datapack:QI0EmgZ1
+        v182E90X:beta
+        9eGKb6K1
+        vCFaodCy
+        c8cfv0mk
+      MAX_PLAYERS: 4
+      MOTD: "I miss Big Walk :("
+      MODE: survival
+      DIFFICULTY: HARD
+      EULA: true
+      LOG_TIMESTAMP: true
+      TZ: Europe/Prague
+    restart: on-failure:3
+    stdin_open: true
+    tty: true
+    networks:
+      - messis
+    volumes:
+      - ./data:/data
+      - ./plugins:/plugins
+    ports:
+      - 25565:25565
+      - 24454:24454/udp
+networks:
+  messis:
+    name: messis
