@@ -22,7 +22,7 @@ web-server:
 Server:
   packs:
     all:
-      urls: ["https://cdn.modrinth.com/data/QI0EmgZ1/versions/E9rngRfK/Matcha_Flavoured_1_12.zip"]
+      urls: ["https://cdn.modrinth.com/data/QI0EmgZ1/versions/WRkL802v/MF_RP_1_12_3_26_2.zip"]
       generate-hash: true
       hashes: [""]
 

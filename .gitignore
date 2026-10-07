@@ -33,6 +33,7 @@
 *_old
 .*
 cache/
+docker/
 logs/
 libraries/
 tmp/

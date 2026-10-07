@@ -12,16 +12,20 @@ services:
       # voice chat
       # graves
       # jei recipe fix
+      # sit
       MODRINTH_PROJECTS: |
-        datapack:QI0EmgZ1
+        datapack:QI0EmgZ1:1.12.4+dp
         v182E90X:beta
         9eGKb6K1
         vCFaodCy
         c8cfv0mk
-      MAX_PLAYERS: 4
+        GOHbQGyX
+      MAX_PLAYERS: 5
       MOTD: "I miss Big Walk :("
       MODE: survival
       DIFFICULTY: HARD
+      RCON_CMDS_STARTUP: |-
+        gamerule keep_inventory false
       EULA: true
       LOG_TIMESTAMP: true
       TZ: Europe/Prague
